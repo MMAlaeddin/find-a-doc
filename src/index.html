@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/js" src="main.js"></script>
+  <title>Doctor API</title>
+</head>
+<body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Find Your Portland Area Doctor</h1>
+      </div>
+      <form id="docInfo">
+        <label><h3>Search by Doctor's Name:</h3></label>
+        <input type="text" id="docName">
+        <button type="submit" class="btn-info">Find My Doctor!</button>
+      </form>
+        <p></p>
+        <form id="sympForm">
+        <label><h3>Search by Symptoms:</h3></label>
+        <input type="text" id="symptoms">
+        <button type="submit" class="btn-info">Find My Doctor!</button>
+      </form>
+      <div id="result">
+        <ul id="name">
+
+        </ul>
+        <ul id="address">
+
+        </ul>
+        <ul id="phone">
+
+        </ul>
+        <ul id="site">
+
+        </ul>
+        <ul id="newPatients">
+
+        </ul>
+      </div>
+    </div>
+</body>
+</html>
