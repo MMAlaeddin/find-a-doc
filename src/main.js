@@ -25,8 +25,6 @@ $(document).ready(function() {
       } else if (response) {
         for (let i = 0; i < docArr.length; i++) {
           nameArr.push(`<li> ${response.data[i].profile.first_name} ${response.data[i].profile.last_name} - ${response.data[i].practices[i].visit_address.street} - ${response.data[i].practices[i].accepts_new_patients} </li>`);
- 
-        
       }
     }
       $("#name").append(nameArr);
@@ -55,7 +53,6 @@ $("#sympForm").submit(function(event) {
         sympArr.push(`<li> ${response2.data[j].profile.first_name} <br> ${response2.data[j].profile.last_name} <br> ${response2.data[j].practices[0].visit_address.street} <br> ${response2.data[j].practices[0].accepts_new_patients} <br> <a href="${response2.data[j].practices[0].website}">Link to website</a> </li>`);
       }
     }
-    console.log(response2)
     $("#name").append(sympArr);
   }
 });
