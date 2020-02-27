@@ -9,7 +9,7 @@ export class DoctorInfo {
 					jsonifiedResponse = false; 
 				}
 				return jsonifiedResponse;
-			 	} catch {
+			 	} catch(error) {
 					 return false;
 				 }
 			}
@@ -25,7 +25,7 @@ export class DoctorInfo {
               jsonifiedResponse = false; 
             }
             return jsonifiedResponse;
-             } catch {
+             } catch(error) {
                return false;
              }
           }
